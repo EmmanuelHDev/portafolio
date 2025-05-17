@@ -1,0 +1,31 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "septiembre 2024",
+    title: "I lugar en la hackathon SIC",
+    company: "Samsung Innovation Campus",
+    description:
+      "Obtuve el primer lugar en la hackathon final del programa Samsung Innovation Campus Panamá (octubre 2024), liderando el desarrollo de NeuroEcoWaste Solutions, una estación de reciclaje inteligente que utiliza un chatbot en Telegram y tecnologías IoT para incentivar la recolección de desechos mediante un sistema de puntos canjeables.",
+    link: "https://utp.ac.pa/estudiante-de-la-fisc-veraguas-participa-del-iv-samsung-innovation-campus-2024",
+  },
+  {
+    date: "Octubre 2024",
+    title: "II lugar en la Hack4Edu",
+    company: "Hackathon internacional",
+    description:
+      "Obtuve el segundo lugar en la categoría Senior de la hackathon internacional Hack4Edu (octubre 2024), organizada por Fundación Telefónica y la Universidad Pontificia de Salamanca. Lideré el desarrollo de un “Tutor Virtual” basado en inteligencia artificial para la enseñanza de matemáticas a niños con discapacidad visual, en un equipo multidisciplinario que compitió con más de 600 participantes de 12 países. Este proyecto destacó por su innovación y enfoque inclusivo en educación.",
+      link: "https://utp.ac.pa/centro-regional-de-veraguas-se-lleva-segundo-lugar-en-v-edicion-del-hack4edu",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
